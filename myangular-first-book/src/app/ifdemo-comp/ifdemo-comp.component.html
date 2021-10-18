@@ -1,0 +1,23 @@
+<p>ifdemo-comp works!</p>
+<p> M1 Semiconductor <input type="radio" name="rb1" (click)=calc_func(true) checked>
+<p> T2 Semiconductor <input type="radio" name="rb1" (click)=calc_func(false)>
+
+<div *ngIf="somevalue then trueblock else falseblock">
+</div>
+    <ng-template #trueblock>
+        <div> 
+            <label style="color: blue;background-color: burlywood;">
+           <h2> {{ somevalue}}</h2>
+        </label>
+    </div>
+    </ng-template>
+    
+    <ng-template #falseblock>
+        <div> 
+            <label style="color: brown">
+            <h2>{{ somevalue}}</h2>
+        </label>
+    </div>
+    </ng-template>
+
+ 

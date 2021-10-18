@@ -1,0 +1,12 @@
+<p>second-comp works!</p>
+
+<ul>
+    <li *ngFor ="let n1 of stud_name"> {{ n1 }} </li>
+</ul>
+
+<table style="border: 5px;border:blueviolet" >
+<tr *ngFor ="let f1 of stud_name;let i=index">
+    <td>{{ i }} </td><td ><app-first-comp-new [s1_name]="f1"> </app-first-comp-new></td>
+</tr>
+
+</table>
